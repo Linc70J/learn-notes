@@ -155,16 +155,6 @@ class InvoicePaid extends Notification implements ShouldQueue
 }
 ```
 
-### 使用Queue來通知
-```php
-class InvoicePaid extends Notification implements ShouldQueue
-{
-    use Queueable;
-
-    // ...
-}
-```
-
 ### 設定通知的Event
 發送通知時，通知系統會觸發該事件。可在以下位置註冊此活動的Listener：Illuminate\Notifications\Events\NotificationSentEventServiceProvider
 ```php
